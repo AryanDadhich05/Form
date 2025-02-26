@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+<div class="background">
+    <div class="container">
+        <form id="userForm">
+            <header>
+                <h1 class="main_heading">Student Information</h1>
+            </header>
+
+            <hr>
+            <div>
+                <p>Name: <input type="text" id="name" required></p>
+                <p>Roll No.: <input type="text" id="rollno" required></p>
+
+                <fieldset class="Gender">
+                    <legend>Gender</legend>
+                    <p>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </p>
+                </fieldset>
+
+                <p>Address: <input type="text" id="address" required></p>
+                <p>Course Name: <input type="text" id="course" required></p>
+                <p>Skills: <input type="text" id="skill" required></p>
+                <p>Email: <input type="email" id="email" required></p>
+                <p>Phone No.: <input type="tel" id="phoneno" required></p>
+            </div>
+
+            <hr>
+            <div class="button">
+                <p><input type="submit" value="Submit" id="submitBtn" class="pay_now"></p>
+                <p><input type="reset" value="Reset" class="reset"></p>
+            </div>
+        </form>
+    </div>
+    <input type="text" id="searchInput" class="searchInput" placeholder="Search by name or roll number..." onkeyup="searchTable()">
+    <button onclick="downloadExcel()">Download as Excel</button>
+
+    <!-- Student Information Table -->
+    <table border="1"  class="table">
+        <thead>
+            <tr>
+                <th>Sr.No.</th>
+                <th>Student Name</th>
+                <th>Roll Number</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Course</th>
+                <th>Skills</th>
+                <th>Email</th>
+                <th>Contact No.</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+    </table>
+
+    <script src="form2.js"></script>
+</div>
+</body>
+
+</html>

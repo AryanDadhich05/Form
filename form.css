@@ -1,0 +1,60 @@
+*{
+    box-sizing:border-box;
+}
+.background{
+    background-color: burlywood;
+    height: 100%;
+}
+.container{
+    
+    width:45%;
+    margin-left:30% ;
+    height:600px;
+    background-color: bisque;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    /* padding: 100px; */
+    border: 5px black solid;
+    text-align: center;
+    flex-basis: 2;
+}
+.main_heading{
+    border: 2px burlywood solid;
+    padding: 10px;
+    background-color: chocolate;
+    /* width: 200%; */
+    justify-content:space-around;
+    
+}
+input[type="address"] {
+    /* width: 300px; Increase width */
+    height: 40px; /* Increase height */
+    /* padding: 10px; /* Add spacing inside */
+    /* font-size: 16px; Make text bigger */ 
+  }
+
+.reset:hover{
+    box-shadow: 5px 0 30px;
+    cursor: pointer;
+}
+
+.pay_now:hover{
+    box-shadow: 5px 0 30px;
+    cursor: pointer;
+}
+
+.table{
+    background-color: bisque;
+    width: 100%;
+}
+
+.searchInput{
+    width: 100%;
+    margin: 5px;
+    border: 2px black solid;
+    border-radius: 5px;
+
+}
+
